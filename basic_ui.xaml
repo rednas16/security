@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="security.basic_ui"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:security"
+            
+             
+           >
+    <Grid Margin="0,0,10,10" >
+
+        <Label x:Name="lblSource" Content="Bronbestand:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" />
+        <Label x:Name="lblDestination" Content="Doelbestand:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+
+
+
+
+        <Button x:Name="btnShowFolder" Content="Open in nieuw venster" HorizontalAlignment="Left" Margin="38,204,0,0" VerticalAlignment="Top" Panel.ZIndex="1"/>
+
+
+
+        <Button x:Name="btnAction" Click="btnAction_Click"  HorizontalAlignment="Left" Margin="233,150,0,0" VerticalAlignment="Top" Width="76" Panel.ZIndex="1">
+            <StackPanel Background="Transparent">
+                <Image Source="boom.png"   />
+            </StackPanel>
+        </Button>
+        <ProgressBar HorizontalAlignment="Left" Height="21" Margin="13,178,0,0" VerticalAlignment="Top" Width="189"/>
+        <GroupBox x:Name="groupBox" Header="Bestand informatie" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Height="105" Width="190"></GroupBox>
+
+
+        <Label x:Name="lblext" Content="Extensie" HorizontalAlignment="Left" Margin="16,106,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblGrootte" Content="Bestand grootte:" HorizontalAlignment="Left" Margin="14,85,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbbsentto" HorizontalAlignment="Left" Margin="222,106,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblsentto" Content="Verzend naar:" HorizontalAlignment="Left" Margin="222,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSource" TextWrapping="NoWrap" TextChanged="txtSource_TextChanged" HorizontalAlignment="Left" Height="23" Margin="90,12,0,0" VerticalAlignment="Top" Width="373"/>
+        <TextBox x:Name="txtDestination" TextWrapping="NoWrap" TextChanged="txtDestination_TextChanged"  HorizontalAlignment="Left" Height="23" Margin="90,40,0,0" VerticalAlignment="Top" Width="373"/>
+
+        <Button Click="btnSourceFile_Click" x:Name="btnSourceFile" Content="..." Panel.ZIndex="1" Height="20" Margin="470,13,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20"/>
+        <Button Click="btnDestinationFile_Click" x:Name="btnDestinationFile" Content="..." Panel.ZIndex="1" Height="20" Margin="469,43,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="20"/>
+
+
+    </Grid>
+</UserControl>

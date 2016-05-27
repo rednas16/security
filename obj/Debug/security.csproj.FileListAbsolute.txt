@@ -1,0 +1,150 @@
+c:\users\sander\documents\visual studio 2015\Projects\security\security\bin\Debug\security.exe.config
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\security.csprojResolveAssemblyReference.cache
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\login.g.cs
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\MainWindow.g.cs
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\RegistreerWindow.g.cs
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\App.g.cs
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\security_MarkupCompile.cache
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\security_MarkupCompile.lref
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\bin\Debug\security.exe
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\bin\Debug\security.pdb
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\login.baml
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\MainWindow.baml
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\RegistreerWindow.baml
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\security.g.resources
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\security.Properties.Resources.resources
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\security.csproj.GenerateResource.Cache
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\security.exe
+C:\Users\Sander\Documents\Visual Studio 2015\Projects\security\security\obj\Debug\security.pdb
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\bin\Debug\security.exe.config
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\security.exe
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\security.pdb
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\bin\Debug\security.exe.config
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\security.exe
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\security.pdb
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\bin\Debug\security.exe
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\bin\Debug\security.pdb
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\security.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\login.g.cs
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\MainWindow.g.cs
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\RegistreerWindow.g.cs
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\App.g.cs
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\security_MarkupCompile.cache
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\security_MarkupCompile.lref
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\login.baml
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\MainWindow.baml
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\RegistreerWindow.baml
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\security.g.resources
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\security.Properties.Resources.resources
+\\vmware-host\Shared Folders\Dropbox\school\basic security\project\security\security\obj\Debug\security.csproj.GenerateResource.Cache
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\security.csprojResolveAssemblyReference.cache
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\login.g.cs
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\MainWindow.g.cs
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\RegistreerWindow.g.cs
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\App.g.cs
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\security_MarkupCompile.cache
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\security_MarkupCompile.lref
+Z:\Dropbox\school\basic security\project\security\security\bin\Debug\security.exe.config
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\security.exe
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\security.pdb
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\security.csprojResolveAssemblyReference.cache
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\login.g.cs
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\MainWindow.g.cs
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\RegistreerWindow.g.cs
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\App.g.cs
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\security_MarkupCompile.cache
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\security_MarkupCompile.lref
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\bin\Debug\security.exe
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\bin\Debug\security.pdb
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\login.baml
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\MainWindow.baml
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\RegistreerWindow.baml
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\security.g.resources
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\security.Properties.Resources.resources
+C:\Users\Sander\Dropbox\school\basic security\project\security\security\obj\Debug\security.csproj.GenerateResource.Cache
+Z:\Dropbox\school\basic security\project\security\security\bin\Debug\security.exe
+Z:\Dropbox\school\basic security\project\security\security\bin\Debug\security.pdb
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\login.baml
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\MainWindow.baml
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\RegistreerWindow.baml
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\security.g.resources
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\security.Properties.Resources.resources
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\security.csproj.GenerateResource.Cache
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\basic_ui.g.cs
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\SubFunction.g.cs
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\basic_ui.baml
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\SubFunction.baml
+Z:\Dropbox\school\basic security\project\security\security\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\School\Basic security\security\bin\Debug\security.exe.config
+D:\School\Basic security\security\obj\Debug\security.exe
+D:\School\Basic security\security\obj\Debug\security.pdb
+Z:\Dropbox\school\basic security\security met tekst\bin\Debug\security.exe.config
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\security.exe
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\security.pdb
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\basic_ui.g.cs
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\login.g.cs
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\MainWindow.g.cs
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\RegistreerWindow.g.cs
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\SubFunction.g.cs
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\App.g.cs
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\GeneratedInternalTypeHelper.g.cs
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\security_MarkupCompile.cache
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\security_MarkupCompile.lref
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\basic_ui.baml
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\login.baml
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\RegistreerWindow.baml
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\SubFunction.baml
+Z:\Dropbox\school\basic security\security met tekst\bin\Debug\security.exe
+Z:\Dropbox\school\basic security\security met tekst\bin\Debug\security.pdb
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\MainWindow.baml
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\security.g.resources
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\security.Properties.Resources.resources
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\security.csproj.GenerateResource.Cache
+Z:\Dropbox\school\basic security\security met tekst\obj\Debug\security.csprojResolveAssemblyReference.cache
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\bin\Debug\security.exe.config
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\security.exe
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\security.pdb
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\security.csprojResolveAssemblyReference.cache
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\basic_ui.g.cs
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\login.g.cs
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\MainWindow.g.cs
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\RegistreerWindow.g.cs
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\SubFunction.g.cs
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\App.g.cs
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\security_MarkupCompile.cache
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\security_MarkupCompile.lref
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\bin\Debug\security.exe
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\bin\Debug\security.pdb
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\basic_ui.baml
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\login.baml
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\MainWindow.baml
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\RegistreerWindow.baml
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\SubFunction.baml
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\security.g.resources
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\security.Properties.Resources.resources
+C:\Users\Sander\Dropbox\school\basic security\security met tekst\obj\Debug\security.csproj.GenerateResource.Cache
+C:\Users\Sander\Dropbox\school\security met tekst\bin\Debug\security.exe.config
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\security.exe
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\security.pdb
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\security.csprojResolveAssemblyReference.cache
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\basic_ui.g.cs
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\login.g.cs
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\MainWindow.g.cs
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\RegistreerWindow.g.cs
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\SubFunction.g.cs
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\App.g.cs
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\security_MarkupCompile.cache
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\security_MarkupCompile.lref
+C:\Users\Sander\Dropbox\school\security met tekst\bin\Debug\security.exe
+C:\Users\Sander\Dropbox\school\security met tekst\bin\Debug\security.pdb
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\basic_ui.baml
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\login.baml
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\MainWindow.baml
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\RegistreerWindow.baml
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\SubFunction.baml
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\security.g.resources
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\security.Properties.Resources.resources
+C:\Users\Sander\Dropbox\school\security met tekst\obj\Debug\security.csproj.GenerateResource.Cache
+C:\Users\Sander\Desktop\security met tekst ingezonden\security met tekst\security met tekst\bin\Debug\security.exe.config
+C:\Users\Sander\Desktop\security met tekst ingezonden\security met tekst\security met tekst\obj\Debug\security.exe
+C:\Users\Sander\Desktop\security met tekst ingezonden\security met tekst\security met tekst\obj\Debug\security.pdb
