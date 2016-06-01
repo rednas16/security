@@ -13,7 +13,6 @@ namespace security
         public string private_rsa_key { get; private set; }
         public string public_rsa_key { get; private set; }
         private RSA program_encryptor;
-        private RSA program_decryptor;
         private string username;
         private string user_public_key;
         private string user_private_key;
@@ -35,9 +34,8 @@ namespace security
             Get_prog_keys();
 
             program_encryptor = new RSA();
-            program_decryptor = new RSA();
 
-            program_decryptor.SetPrivKey(private_rsa_key);
+            program_encryptor.SetPrivKey(private_rsa_key);
             program_encryptor.SetPubKey(public_rsa_key);
 
 
@@ -65,17 +63,25 @@ namespace security
 
         }
 
+        public List<string> get_user(string naam) {
+            List<string> userValues = bestand.Get_User_Values(naam);
+            if (userValues!=null)
+                return userValues;
+
+            return null;
+        }
+
         public bool checkLogin(string naam, string wachtwoord)
         {
             hashing = new hasher();
-            List<string> userValues = bestand.Get_User_Values(naam);
+            List<string> userValues = get_user(naam);
 
             if (userValues == null)
                 return false;
-            
+
 
             if (!hashing.check_hash(Transformer.GetByteValue(wachtwoord), userValues[0]))
-            return false;
+                return false;
 
             username = naam;
             user_private_key = userValues[1];
@@ -154,7 +160,7 @@ namespace security
 
         public bool encryptSym(string source, string destination)
         {
-            symEncrypt<RijndaelManaged> symEncryptor = new symEncrypt<RijndaelManaged>();
+            AesEncryptie symEncryptor = new AesEncryptie();
             inputHasher= new hasher();
             outputHasher= new hasher();
 
@@ -185,11 +191,12 @@ namespace security
 
             while ((count = input.Read_part()) > 0)
             {
-                inputHasher.Add_part(input.buffer,count);
-                hulp = symEncryptor.encrypt(input.buffer,count);
+                inputHasher.Add_part(input.buffer);
+                hulp = symEncryptor.encrypt(input.buffer);
                 outputHasher.Add_part(hulp);
                 output.Write_line(hulp);
             }
+            symEncryptor.end_encryption();
             input.close_file();
 
             writeEnd();
@@ -199,9 +206,10 @@ namespace security
 
         
 
+
         public bool decryptSym(string source, string destination)
         {
-            symEncrypt<RijndaelManaged> symEncryptor;
+            AesEncryptie symEncryptor;
             inputHasher = new hasher();
             outputHasher = new hasher();
             
@@ -229,15 +237,14 @@ namespace security
             else
                 output = new FileIO(destination);
 
-            symEncryptor =  new symEncrypt<RijndaelManaged>(program_decryptor.run_decrypt(IV), program_decryptor.run_decrypt(key));
+            symEncryptor =  new AesEncryptie(program_encryptor.run_decrypt(IV), program_encryptor.run_decrypt(key));
           
-
-            int count;
+                
             byte[] hulp;
 
             output.OpenWrite();
 
-            while ((count = input.readCode()) > 0)
+            while ( input.readCode() > 0)
             {
                 inputHasher.Add_part(input.buffer);
                 hulp = symEncryptor.encrypt(input.buffer);
@@ -246,7 +253,7 @@ namespace security
                 output.Write_part(hulp);
             }
 
-            
+                symEncryptor.end_encryption();
                 Check_Hashes();
             }
             catch(Exceptions ex)
@@ -264,27 +271,125 @@ namespace security
         private void Check_Hashes()
         {
 
-            string salt_original_input = "";
-            string salt_original_output = "";
+            string hash_original_input = "";
+            string hash_original_output = "";
 
-            ReadEnd(ref salt_original_input, ref salt_original_output);
+            ReadEnd(ref hash_original_input, ref hash_original_output);
 
-            if (!inputHasher.Check_file(salt_original_output))
+            if (!inputHasher.Check_file(hash_original_output))
                 throw new Exceptions("Het originele bestand is gewijzigd.");
-            if (!outputHasher.Check_file(salt_original_input))
+            if (!outputHasher.Check_file(hash_original_input))
                 throw new Exceptions("Het geëncrypteerde bestand is gewijzigd.");
 
 
         }
 
-        public bool encryptrsa(string source, string destination,byte[] key_andere_pub)
+        public bool encryptrsa(string source, string destination,string key_friend)
         {
-            //zelfde analogie alleen zal hier via de login functies naar de key van persoon b gezocht worden.
-            //daarna voeg je die encryptie en het webschrijven van de keys toe in de loop en write/read begin, write/read end functies
+            RSA encryptor = new RSA();
+            RSA friendEncryptor=new RSA();
+
+            if (key_friend.Equals(""))
+            {
+                encryptor.SetPubKey(user_public_key);
+            }
+            else
+            {
+                encryptor.SetPubKey(user_private_key);
+                friendEncryptor.SetPubKey(key_friend);
+                
+            }
+
+
+            inputHasher = new hasher();
+            outputHasher = new hasher();
+
+
+            FileInfo info = new FileInfo(source);
+            input = new FileIO(source);
+            output = new FileIO(destination);
+
+            output.Open_Writer();
+            output.Write_line(info.Name);
+            output.Write_line("CODE:");
+
+            int count;
+            byte[] hulp;
+
+            input.OpenRead();
+
+            while ((count = input.Read_part()) > 0)
+            {
+                inputHasher.Add_part(input.buffer);
+                hulp = encryptor.run_encrypt(input.buffer);
+
+                if (!key_friend.Equals(""))
+                    //hulp = friendEncryptor.run_encrypt(hulp);
+
+                outputHasher.Add_part(hulp);
+                output.Write_line(hulp);
+
+            }
+
+
+            input.close_file();
+
+            writeEnd();
+            output.Writer_close();
+
             return true;
         }
-        public bool decryptrsa(string source, string destination, byte[] key_andere_pub)
+        public bool decryptrsa(string source, string destination, string key_friend)
         {
+
+            RSA encryptor = new RSA();
+            RSA friendEncryptor = new RSA();
+
+
+            encryptor.SetPrivKey(user_private_key);
+
+            if (!key_friend.Equals("")) {
+                friendEncryptor.SetPrivKey(key_friend);
+            }
+
+            inputHasher = new hasher();
+            outputHasher = new hasher();
+
+            input = new FileIO(source);
+
+            input.Open_Reader();
+            string filename = input.read_till("CODE:");
+
+            FileInfo info = new FileInfo(filename);
+            FileInfo infoDestination = new FileInfo(destination);
+            if (!infoDestination.Extension.Equals(info.Extension))
+                output = new FileIO(destination, info.Extension);
+            else
+                output = new FileIO(destination);
+            
+            byte[] hulp;
+
+            output.OpenWrite();
+
+            while (input.readCode() > 0)
+            {
+                inputHasher.Add_part(input.buffer);
+
+                if (!key_friend.Equals(""))
+                {
+                    hulp = friendEncryptor.run_decrypt(input.buffer);
+                    hulp = encryptor.run_decrypt(hulp);
+                }
+                else
+                    hulp = encryptor.run_decrypt(input.buffer);
+
+                outputHasher.Add_part(hulp);
+                output.Write_part(hulp);
+            }
+
+            Check_Hashes();
+
+            output.close_file();
 
             return true;
         }

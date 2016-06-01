@@ -30,6 +30,7 @@ namespace security
         private alg_type algtype;
 
         private string source, destination;
+        private string friend="";
         ProgramController programma;
 
 
@@ -54,12 +55,15 @@ namespace security
 
             if (algtype == alg_type.RSA)
             {
-                lblsentto.Visibility = Visibility.Visible;
-                cbbsentto.Visibility = Visibility.Visible;
                 List<string> value = programma.Get_Users();
 
-                if (value != null)
-                    cbbsentto.ItemsSource = value;
+                if (value.Count() == 0)
+                    return;
+
+                lblsentto.Visibility = Visibility.Visible;
+                cbbsentto.Visibility = Visibility.Visible;
+                
+                cbbsentto.ItemsSource = value;
             }
             else {
 
@@ -161,8 +165,18 @@ namespace security
                 return (Math.Sign(aantal) * num).ToString() + grootes[teller];
             }
 
+        private void cbbsentto_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            friend = cbbsentto.SelectedItem.ToString();
+        }
+
         private void btnAction_Click(object sender, RoutedEventArgs e)
         {
+            string friend_pub_key="";
+            if (!friend.Equals(""))
+            {
+                friend_pub_key = programma.get_user(friend)[2];
+            }
 
 
             if (encrypt)
@@ -179,7 +193,7 @@ namespace security
                 }
                 if (algtype == alg_type.RSA)
                 {
-                   
+                    programma.encryptrsa(source, destination, friend_pub_key);
                 }
                 MessageBox.Show("Succesvol geëncrypteerd!");
             }
@@ -196,7 +210,9 @@ namespace security
                 }
                 if (algtype == alg_type.RSA)
                 {
-                    string andere_persoon = cbbsentto.
+
+                        programma.decryptrsa(source, destination, friend_pub_key);
+                    
                 }
 
                 MessageBox.Show("Succesvol gedecrypteerd!");

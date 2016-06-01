@@ -38,16 +38,10 @@ namespace security
         }
         public void Add_part(byte[] text) // voeg een deel van de hash toe
         {
-            int hulp = text.Count();
+            int hulp = text.Length;
             totalBytes += hulp;
             sha.TransformBlock(text,0,hulp,null,0);
             
-        }
-        public void Add_part(byte[] text, int count) // voeg een deel van de hash toe met count
-        {
-            totalBytes += count;
-            sha.TransformBlock(text, 0,count, null, 0);
-
         }
         //hash
         public string Hash_file(bool salt = true) // hash wat in de hasher zit, true= salt toevoegen

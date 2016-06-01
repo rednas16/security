@@ -30,7 +30,7 @@
 
         <Label x:Name="lblext" Content="Extensie" HorizontalAlignment="Left" Margin="16,106,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblGrootte" Content="Bestand grootte:" HorizontalAlignment="Left" Margin="14,85,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbbsentto" HorizontalAlignment="Left" Margin="222,106,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbbsentto" HorizontalAlignment="Left" Margin="222,106,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbbsentto_SelectionChanged"/>
         <Label x:Name="lblsentto" Content="Verzend naar:" HorizontalAlignment="Left" Margin="222,75,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtSource" TextWrapping="NoWrap" TextChanged="txtSource_TextChanged" HorizontalAlignment="Left" Height="23" Margin="90,12,0,0" VerticalAlignment="Top" Width="373"/>
         <TextBox x:Name="txtDestination" TextWrapping="NoWrap" TextChanged="txtDestination_TextChanged"  HorizontalAlignment="Left" Height="23" Margin="90,40,0,0" VerticalAlignment="Top" Width="373"/>

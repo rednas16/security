@@ -11,11 +11,26 @@ namespace security
     {
         public static byte[] String_to_byte(string text)
         {
+            byte[] hulp = new byte[text.Length/3];
+            StringBuilder substring = new StringBuilder();
+            string character= "";
+            int teller=0;
 
-            return Enumerable.Range(0, text.Length)
-                     .Where(x => x % 2 == 0)
-                     .Select(x => Convert.ToByte(text.Substring(x, 2), 16))
-                     .ToArray();
+            for (int i = 0; i < text.Length; i++)
+            {
+                character = text.Substring(i, 1);
+                if (character.Equals(";"))
+                {
+                    hulp[teller] = Convert.ToByte(substring.ToString(), 16);
+                    teller++;
+                    substring.Length = 0;
+                }
+                else
+                    substring.Append(character);
+
+            }
+            return hulp;
+            
         }
 
         public static string Byte_to_string(byte[] bytes)
@@ -24,6 +39,7 @@ namespace security
             foreach (byte b in bytes)
             {
                 text.Append(b.ToString("X2").ToLower());
+                text.Append(";");
             }
             return text.ToString();
         }

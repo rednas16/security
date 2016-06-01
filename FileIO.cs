@@ -15,6 +15,7 @@ namespace security
         private FileStream file;
         private StreamWriter writer;
         private StreamReader reader;
+        private static int bufferlengte = 4096;
         public byte[] buffer { get; private set; }
 
         public FileIO(string bestand = "",string ext="")
@@ -56,6 +57,8 @@ namespace security
             init();
             List<string> value = new List<string>();
             string naam = "";
+
+            value.Add("");
 
 
             try
@@ -201,15 +204,21 @@ namespace security
 
         public void OpenRead() //opend voor lezen
         {
-
-            buffer = new byte[4096];
+          
             file = new FileStream(path, FileMode.Open, FileAccess.Read);
 
         }
 
         public int Read_part()
         {
-            return file.Read(buffer, 0, buffer.Length);
+
+            byte[] readed = new byte[bufferlengte];
+            int teller= file.Read(readed, 0, readed.Length);
+            buffer = new byte[teller];
+            Array.Copy(readed,buffer, teller);
+            Array.Clear(readed,0,bufferlengte);
+
+            return teller;
         }
 
         //einde file read en write
